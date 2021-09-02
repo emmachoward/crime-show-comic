@@ -1,17 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
+import MediaQuery from 'react-responsive'
 
 import classes from './Nav.module.css'
+import MobileNav from './MobileNav';
+import DesktopNav from './DesktopNav';
 
 const Nav = props => {
+
+
     return (
         <div>
-            <ul>
-                <li><a href="#"><img src="http://satyr.io/50x50/black" /><br />Menu</a></li>
-                <li><a href="#"><img src="http://satyr.io/50x50/black" /><br />Index</a></li>
-                <li><a href="#"><img src="http://satyr.io/50x50/black" /><br />Search</a></li>
-                <li><a href="#"><img src="http://satyr.io/50x50/black" /><br />Prev</a></li>
-                <li><a href="#"><img src="http://satyr.io/50x50/black" /><br />Next</a></li>
-            </ul>
+            <MediaQuery maxWidth={700}>
+                Mobile
+                <MobileNav />
+            </MediaQuery>
+            <MediaQuery minWidth={701}>
+                desktop
+                <DesktopNav />
+            </MediaQuery>
         </div>
     );
 };
