@@ -11,14 +11,12 @@ const Nav = props => {
 
 
     return (
-        <div>
+        <div className={classes.nav}>
             <MediaQuery maxWidth={700}>
                 <MobileHeader />
-                Mobile
                 <MobileNav />
             </MediaQuery>
             <MediaQuery minWidth={701}>
-                desktop
                 <DesktopNav />
             </MediaQuery>
         </div>

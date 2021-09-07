@@ -7,7 +7,7 @@ const Comic = props => {
         <div className={classes.comic}>
             <h2>Comic Title</h2>
             <p>Date Published</p>
-            <img src="https://picsum.photos/id/1/500/2000" />
+            <img src="https://picsum.photos/500/2000" />
         </div>
     );
 };

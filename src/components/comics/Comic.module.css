@@ -1,4 +1,9 @@
+.comic {
+  padding: 5px;
+  margin: 100px auto 0 auto;
+}
+
 .comic img {
-    max-width: 100%;
-    height: auto;
-  }
+  max-width: 100%;
+  height: auto;
+}
