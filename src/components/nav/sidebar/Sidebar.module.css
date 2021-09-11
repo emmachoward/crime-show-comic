@@ -1,0 +1,10 @@
+.sidebar {
+  position: fixed;
+  background-color: yellow;
+  height: 100%;
+  width: 60%;
+  max-width: 300px;
+  left: 0;
+  top: 100px;
+  overflow: scroll;
+}
