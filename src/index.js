@@ -3,11 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { SidebarContextProvider } from './context/Sidebar-context';
 
 ReactDOM.render(
   <React.StrictMode>
+  <SidebarContextProvider>
     <App />
+    </SidebarContextProvider>
   </React.StrictMode>,
+  
   document.getElementById('root')
 );
 
