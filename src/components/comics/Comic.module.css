@@ -1,9 +1,12 @@
 .comic {
-  padding: 5px;
-  margin: 100px auto 0 auto;
+	padding: 5px;
+	margin: 100px auto 0 auto;
+	width: 500px;
+	max-width: 100%;
+	text-align: left;
 }
 
 .comic img {
-  max-width: 100%;
-  height: auto;
+	max-width: 100%;
+	height: auto;
 }

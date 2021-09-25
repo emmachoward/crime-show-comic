@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 
 import classes from './App.module.css'
 
@@ -9,17 +9,25 @@ import { SidebarContext } from './context/Sidebar-context'
 
 
 function App() {
-
   const ctx = useContext(SidebarContext);
+  const [staticComicData, setStaticComicData] = useState([]);
+
+  useEffect(() => {
+    fetch("data/comicData.json")
+      .then(res => res.json())
+      .then(data => { 
+        setStaticComicData(data);
+      })
+      .catch(err =>{ console.error(err => console.error(err))}); 
+    }, []);
+
 
   return (
     
     <div className={classes.App}>
-      <Nav />
+      <Nav comicData={staticComicData} />
       <div className={ctx.displaySidebar ? classes.desktopSidebarWrapper : null}>
-        <Comic />
-        <Comic />
-        <Comic />
+        <Comic comicData={staticComicData} />
       </div>
     </div>
   );

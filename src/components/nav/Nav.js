@@ -8,16 +8,16 @@ import DesktopNav from './DesktopNav';
 
 
 const Nav = props => {
-
+    const { comicData } = props;
 
     return (
         <div className={classes.nav}>
             <MediaQuery maxWidth={700}>
                 <MobileHeader />
-                <MobileNav />
+                <MobileNav comicData={comicData}/>
             </MediaQuery>
             <MediaQuery minWidth={701}>
-                <DesktopNav />
+                <DesktopNav comicData={comicData} />
             </MediaQuery>
         </div>
     );

@@ -1,17 +1,22 @@
 .sidebar {
-  position: fixed;
-  background-color: yellow;
-  height: 100%;
-  width: 60%;
-  max-width: 300px;
-  left: 0;
-  top: 100px;
-  overflow: scroll;
+	position: fixed;
+	background-color: yellow;
+	height: 100%;
+	width: 60%;
+	max-width: 300px;
+	left: 0;
+	top: 100px;
+	overflow: scroll;
+  text-align: left;
+}
+
+.sidebar li {
+	display: list-item;
 }
 
 .spacer {
-  position: relative;
-  float: left;
-  height: 100vh;
-  width: 300px;
+	position: relative;
+	float: left;
+	height: 100vh;
+	width: 300px;
 }

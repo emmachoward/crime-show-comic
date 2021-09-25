@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 export const SidebarContext = React.createContext({
     displaySidebar: true,
     toggleSidebar: () => {},
+    
   });
 
   export const SidebarContextProvider = (props) => {

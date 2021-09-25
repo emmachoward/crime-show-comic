@@ -4,6 +4,7 @@ import classes from './MobileNav.module.css'
 import Sidebar from './sidebar/Sidebar';
 
 const MobileNav = props => {
+    const { comicData } = props;
     const [displaySidebar, setDisplaySidebar] = useState(false);
 
     const displaySidebarHandler = () => {
@@ -12,7 +13,7 @@ const MobileNav = props => {
 
     return (
         <>
-            {displaySidebar && <Sidebar />}
+            {displaySidebar && <Sidebar comicData={comicData} />}
             <div className={classes.mobileNav}>
                 <ul>
                     <li><button onClick={displaySidebarHandler} ><img src="http://satyr.io/50x50/black" alt="" /><br />Menu</button></li>

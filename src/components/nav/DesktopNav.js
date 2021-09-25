@@ -7,10 +7,11 @@ import { SidebarContext } from '../../context/Sidebar-context';
 
 const DesktopNav = props => {
     const ctx = useContext(SidebarContext);
+    const { comicData } = props;
     
     return (
         <>
-            {ctx.displaySidebar && <Sidebar />}  
+            {ctx.displaySidebar && <Sidebar comicData={comicData} />}  
             <div className={classes.desktopNav}>
                 <div className={classes.menu}>
                     <button onClick={ctx.toggleSidebar} >

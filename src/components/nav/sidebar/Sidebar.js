@@ -4,29 +4,18 @@ import MediaQuery from 'react-responsive'
 import classes from './Sidebar.module.css'
 
 const Sidebar = (props) => {
+    const { comicData } = props;
+
     return (
         <>
         <div className={classes.sidebar}>
-            <p>1 Hello yes this is the sidebar.</p>
-            <p>Hello yes this is the sidebar.</p>
-            <p>Hello yes this is the sidebar.</p>
-            <p>Hello yes this is the sidebar.</p>
-            <p>Hello yes this is the sidebar.</p>
-            <p>Hello yes this is the sidebar.</p>
-            <p>Hello yes this is the sidebar.</p>
-            <p>Hello yes this is the sidebar.</p>
-            <p>Hello yes this is the sidebar.</p>
-            <p>Hello yes this is the sidebar.</p>
-            <p>Hello yes this is the sidebar.</p>
-            <p>Hello yes this is the sidebar.</p>
-            <p>Hello yes this is the sidebar.</p>
-            <p>Hello yes this is the sidebar.</p>
-            <p>Hello yes this is the sidebar.</p>
-            <p>Hello yes this is the sidebar.</p>
-            <p>Hello yes this is the sidebar.</p>
-            <p>Hello yes this is the sidebar.</p>
-            <p>Hello yes this is the sidebar.</p>
-            <p>Hello yes this is the sidebar.</p>
+            <ol>
+            {comicData.map(comic =>
+                <li key={comic.id}>
+                    {comic.title}
+                </li>
+            )}
+            </ol>
         </div>
         </>
     );
