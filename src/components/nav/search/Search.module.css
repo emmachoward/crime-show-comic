@@ -1,22 +1,15 @@
-.sidebar {
+.search {
 	position: fixed;
-	background-color: yellow;
+	background-color: blueviolet;
 	height: 100%;
 	width: 60%;
 	max-width: 300px;
-	left: 0;
+	right: 0;
 	top: 100px;
 	overflow: scroll;
 	text-align: left;
 }
 
-.sidebar li {
+.search li {
 	display: list-item;
-}
-
-.spacer {
-	position: relative;
-	float: left;
-	height: 100vh;
-	width: 300px;
 }

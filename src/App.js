@@ -14,7 +14,7 @@ function App() {
 
   useEffect(() => {
     fetch("data/comicData.json")
-      .then(res => res.json())
+      .then(response => response.json())
       .then(data => { 
         setStaticComicData(data);
       })
