@@ -37,7 +37,7 @@ const Search = (props) => {
                     value={enteredSearch}
                     onChange={searchChangeHandler}
                 />
-                <input type="submit" value="Search" />
+                <input type="submit" value="Search" onChange={searchChangeHandler} />
             </form>
             <ul>
                 {comicsList.map(comic => (
