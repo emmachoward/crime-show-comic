@@ -5,6 +5,7 @@ import classes from './App.module.css'
 import Nav from './components/nav/Nav';
 import Comic from './components/comics/Comic';
 import { SidebarContext } from './context/Sidebar-context'
+import { Route, Switch, Redirect, NavLink, Router } from "react-router-dom";
 
 
 
@@ -27,7 +28,19 @@ function App() {
     <div className={classes.App}>
       <Nav comicData={staticComicData} />
       <div className={ctx.displaySidebar ? classes.desktopSidebarWrapper : null}>
-        <Comic comicData={staticComicData} />
+      <Router>
+        <Switch>
+          <Route path="/" exact>
+            <Redirect to="/comics" />
+          </Route>
+          <Route path="/comics">
+            <Comic comicData={staticComicData} />
+          </Route>
+          <Route path="/comics">
+            <about />
+          </Route>
+        </Switch>
+      </Router>
       </div>
     </div>
   );
