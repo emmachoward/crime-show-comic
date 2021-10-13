@@ -1,8 +1,6 @@
 import React from 'react';
-import { NavLink, BrowserRouter } from "react-router-dom";
-
-import Comic from '../../comics/Comic';
-import About from '../../about/About';
+import { NavLink } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 
 import classes from './Sidebar.module.css'
 
@@ -24,7 +22,9 @@ const Sidebar = (props) => {
                     <ol>
                         {comicData.map(comic =>
                             <li key={comic.id}>
-                                {comic.title}
+                                <HashLink to={`/comics#${comic.link}`}>
+                                    {comic.title}
+                                </HashLink>
                             </li>
                         )}
                     </ol>

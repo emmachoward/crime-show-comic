@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { HashLink } from 'react-router-hash-link';
 
 import classes from './Search.module.css'
 
@@ -40,11 +41,13 @@ const Search = (props) => {
                 <input type="submit" value="Search" onChange={searchChangeHandler} />
             </form>
             <ul>
-                {comicsList.map(comic => (
+                {comicData.map(comic =>
                     <li key={comic.id}>
-                        {comic.title}
+                        <HashLink to={`/comics#${comic.link}`}>
+                            {comic.title}
+                        </HashLink>
                     </li>
-                ))}
+                )}
             </ul>
         </div>
     );

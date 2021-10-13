@@ -1,6 +1,7 @@
 .comic {
 	padding: 5px;
-	margin: 100px auto 0 auto;
+	margin: 0 auto;
+	padding: 100px 0 0 0;
 	width: 500px;
 	max-width: 100%;
 	text-align: left;
