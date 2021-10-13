@@ -4,13 +4,16 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { SidebarContextProvider } from './context/Sidebar-context';
+import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
+  <BrowserRouter>
   <React.StrictMode>
   <SidebarContextProvider>
     <App />
     </SidebarContextProvider>
-  </React.StrictMode>,
+  </React.StrictMode>
+  </BrowserRouter>,
   
   document.getElementById('root')
 );

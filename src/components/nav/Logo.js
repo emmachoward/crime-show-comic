@@ -1,15 +1,18 @@
 import React from 'react';
+import { Link, BrowserRouter } from "react-router-dom";
 
 import classes from './Logo.module.css'
 
 const Logo = props => {
     return (
         <h1 className={classes.logo}>
-            <a href="#index">
+            
+            <Link to="/index">
                 <img src="http://satyr.io/50x50/black" alt="" /> 
                 Crime Show 
                 <img src="http://satyr.io/50x50/black" alt="" />
-            </a>
+            </Link>
+            
         </h1>
     );
 };

@@ -4,8 +4,9 @@ import classes from './App.module.css'
 
 import Nav from './components/nav/Nav';
 import Comic from './components/comics/Comic';
+import About from './components/about/About';
 import { SidebarContext } from './context/Sidebar-context'
-import { Route, Switch, Redirect, NavLink, Router } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 
 
 
@@ -28,19 +29,20 @@ function App() {
     <div className={classes.App}>
       <Nav comicData={staticComicData} />
       <div className={ctx.displaySidebar ? classes.desktopSidebarWrapper : null}>
-      <Router>
         <Switch>
           <Route path="/" exact>
+            <Redirect to="/comics" />
+          </Route>
+          <Route path="/index">
             <Redirect to="/comics" />
           </Route>
           <Route path="/comics">
             <Comic comicData={staticComicData} />
           </Route>
-          <Route path="/comics">
-            <about />
+          <Route path="/about">
+            <About />
           </Route>
         </Switch>
-      </Router>
       </div>
     </div>
   );

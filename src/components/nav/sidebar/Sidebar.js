@@ -1,5 +1,8 @@
 import React from 'react';
-import { Route, Switch, Redirect, NavLink, Link, Router } from "react-router-dom";
+import { NavLink, BrowserRouter } from "react-router-dom";
+
+import Comic from '../../comics/Comic';
+import About from '../../about/About';
 
 import classes from './Sidebar.module.css'
 
@@ -7,31 +10,27 @@ const Sidebar = (props) => {
     const { comicData } = props;
 
     return (
-        <Router>
-            <nav className={classes.sidebar}>
-                <ul>
-                    <li>
-                        <Link to='/about'>
-                            About
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to='/comics'>
-                            Comics
-                        </Link>
-                        <ol>
-                            {comicData.map(comic =>
-                                <li key={comic.id}>
-                                    {comic.title}
-                                </li>
-                            )}
-                        </ol>
-                    </li>
-                </ul>
-
-                
-            </nav>
-        </Router>
+        <nav className={classes.sidebar}>
+            <ul>
+                <li>
+                    <NavLink to='/about'>
+                        About
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink to='/comics'>
+                        Comics
+                    </NavLink>
+                    <ol>
+                        {comicData.map(comic =>
+                            <li key={comic.id}>
+                                {comic.title}
+                            </li>
+                        )}
+                    </ol>
+                </li>
+            </ul>
+        </nav>
     );
 };
 
