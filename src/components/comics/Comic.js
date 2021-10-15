@@ -14,7 +14,7 @@ const Comic = props => {
 
                     <img src={`images/comics/${comic.image}`} 
                     onError={(e)=>{e.target.onerror = null; 
-                    e.target.src="https://picsum.photos/500/2000"}} 
+                    e.target.src="images/comics/not_released.png"}} 
                     alt={comic.title} /> 
                     {/* Uses filler image when there's no matching image in the folder */}
                 </div>

@@ -1,3 +1,11 @@
 .logo {
-  text-align: center;
+	text-align: center;
+	font-family: "Special Elite", monospace;
+	font-size: 3em;
+}
+
+.logo img {
+	width: 60px;
+	height: 60px;
+	padding: 0 8px;
 }

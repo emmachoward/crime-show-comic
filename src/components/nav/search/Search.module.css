@@ -8,6 +8,9 @@
 	top: 100px;
 	overflow: scroll;
 	text-align: left;
+	font-family: "Special Elite", monospace;
+	font-size: 1.5em;
+	padding: 40px 10px;
 }
 
 .search li {

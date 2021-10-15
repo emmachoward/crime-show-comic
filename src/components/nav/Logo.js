@@ -8,9 +8,9 @@ const Logo = props => {
         <h1 className={classes.logo}>
             
             <Link to="/index">
-                <img src="http://satyr.io/50x50/black" alt="" /> 
+                <img src="images/icons/lisa_icon.png" alt="Lisa Copper" /> 
                 Crime Show 
-                <img src="http://satyr.io/50x50/black" alt="" />
+                <img src="images/icons/franklin_icon.png" alt="Franklin Fuzz" />
             </Link>
             
         </h1>

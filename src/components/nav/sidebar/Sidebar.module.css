@@ -8,6 +8,10 @@
 	top: 100px;
 	overflow: scroll;
 	text-align: left;
+	font-family: "Special Elite", monospace;
+	font-size: 1.5em;
+	line-height: 120%;
+	padding: 20px 0 0 0;
 }
 
 .sidebar li {
