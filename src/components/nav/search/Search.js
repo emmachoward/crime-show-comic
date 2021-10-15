@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState , useEffect} from 'react';
 import { HashLink } from 'react-router-hash-link';
 
 import classes from './Search.module.css'
@@ -6,24 +6,43 @@ import classes from './Search.module.css'
 const Search = (props) => {
     const { comicData } = props;
     const [enteredSearch, setEnteredSearch] = useState('');
-    const [comicsList, setComicsList] = useState(comicData);
+    const [comicsList, setComicsList] = useState([]);
 
-    const filterComics = (comics, query) => {
-        console.log(comics);
-        return comics.filter(
-            comic => comic.title.toLowerCase().indexOf(query.toLowerCase()) !== -1);
-    }
+    useEffect(() => {
+        
+        if (enteredSearch.trim() !== '') {
+            setComicsList(comicData.filter(
+            (comics) => comics.title.toLowerCase().indexOf(enteredSearch.toLowerCase().trim()) !== -1));
+        } else {
+            setComicsList([]);
+        };
+    }, [enteredSearch, comicData]);
+
+
+    // const filterComics = (comics, query) => {
+    //     //console.log(comics);
+    //     if (query.trim() === '') {
+    //         return [];
+    //     }
+    //     return comics.filter(
+    //         comic => comic.title.toLowerCase().indexOf(query.toLowerCase().trim()) !== -1);
+    // }
 
     const searchChangeHandler = (event) => {
         setEnteredSearch(event.target.value)
-        console.log(enteredSearch);
-        setComicsList(filterComics(comicsList, enteredSearch));
+        if (enteredSearch.trim() === '') {
+            setComicsList([]);
+        } else {
+            setComicsList(comicData);
+        }
+        //console.log(enteredSearch);
+        //setComicsList(filterComics(comicData, enteredSearch));
     };
 
     const submitHandler = (event) => {
         event.preventDefault();
-        console.log(enteredSearch);
-        setComicsList(filterComics(comicsList, enteredSearch));
+        //console.log(enteredSearch);
+        //setComicsList(filterComics(comicData, enteredSearch));
     };
 
     return (
@@ -41,7 +60,7 @@ const Search = (props) => {
                 <input type="submit" value="Search" onChange={searchChangeHandler} />
             </form>
             <ul>
-                {comicData.map(comic =>
+                {comicsList.map(comic =>
                     <li key={comic.id}>
                         <HashLink to={`/comics#${comic.link}`}>
                             {comic.title}
