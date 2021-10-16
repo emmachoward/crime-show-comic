@@ -25,11 +25,14 @@ const Sidebar = (props) => {
                                 <HashLink to={`/comics#${comic.link}`}>
                                     {comic.title}
                                 </HashLink>
+                                <hr />
                             </li>
+                            
                         )}
                     </ol>
                 </li>
             </ul>
+            <br /><br /><br /><br />
         </nav>
     );
 };

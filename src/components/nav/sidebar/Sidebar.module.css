@@ -1,6 +1,6 @@
 .sidebar {
 	position: fixed;
-	background-color: yellow;
+	background-color: #ffd91d;
 	height: 100%;
 	width: 60%;
 	max-width: 300px;
@@ -12,10 +12,22 @@
 	font-size: 1.5em;
 	line-height: 120%;
 	padding: 20px 0 0 0;
+	margin: 0 0 100px 0;
+}
+
+.sidebar ul {
+	background-color: #73739c;
+}
+
+.sidebar ol {
+	background-color: #ffd91d;
+	padding-left: 0;
 }
 
 .sidebar li {
 	display: list-item;
+	list-style-position: inside;
+	border: 2px solid black;
 }
 
 .spacer {

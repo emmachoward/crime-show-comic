@@ -10,9 +10,9 @@ const MobileNav = props => {
     const [displaySidebar, setDisplaySidebar] = useState(false);
     const [displaySearch, setDisplaySearch] = useState(false);
     const [currentComic, setCurrentComic] = useState(comicData[0]);
-    console.log(comicData[0]);
-    console.log(comicData.title);
-    //console.log(comicData[2].title);
+    console.log(comicData[0]); //returns entire object
+    console.log(comicData.title); //undefined
+    //console.log(comicData[2].title); //error
 
     const displaySidebarHandler = () => {
         setDisplaySidebar(!displaySidebar);
