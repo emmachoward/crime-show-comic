@@ -1,6 +1,6 @@
 .search {
 	position: fixed;
-	background-color: blueviolet;
+	background-color: #251f50;
 	height: 100%;
 	width: 60%;
 	max-width: 300px;
@@ -10,9 +10,18 @@
 	text-align: left;
 	font-family: "Special Elite", monospace;
 	font-size: 1.5em;
-	padding: 40px 10px;
+	padding: 0 10px;
+}
+
+.search ul {
+	background-color: #ffd91d;
+	padding: 0;
 }
 
 .search li {
 	display: list-item;
+	list-style-position: inside;
+	border-bottom: 3px solid #4e4e5e;
+	padding: 10px 0;
+	margin: 0;
 }

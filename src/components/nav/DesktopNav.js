@@ -1,4 +1,5 @@
 import React, { useState, useContext } from 'react';
+import Button from 'react-bootstrap/Button';
 
 import classes from './DesktopNav.module.css'
 import Logo from './Logo';
@@ -17,21 +18,29 @@ const DesktopNav = props => {
     
     return (
         <>
+            <style type="text/css">
+                {`
+                .btn-link {
+                    color: #696980;
+                    font-family: "Special Elite", monospace;
+                }
+                `}
+            </style>
             {ctx.displaySidebar && <Sidebar comicData={comicData} />}  
             {displaySearch && <Search comicData={comicData} />}
             
             <div className={classes.desktopNav}>
-                <div className={classes.menu}>
-                    <button onClick={ctx.toggleSidebar} >
-                        <img src="http://satyr.io/50x50/black" alt="" />
+                <div  className={classes.menu}>
+                    <Button variant="link" onClick={ctx.toggleSidebar} >
+                        <img src="images/icons/menu_icon.svg" width="50px" alt="Menu" />
                         <br />Menu
-                    </button>
+                    </Button>
                 </div>
                 <Logo />
                 <div className={classes.search}>
-                    <button onClick={displaySearchHandler} >
-                        <img src="http://satyr.io/50x50/black" alt="" /><br />Search
-                    </button>
+                    <Button variant="link" onClick={displaySearchHandler} >
+                        <img src="images/icons/search_icon.svg" width="50px" alt="Search" /><br />Search
+                    </Button>
                 </div>
             </div>
         </>
