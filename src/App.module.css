@@ -8,7 +8,12 @@
 	color: #4e4e5e;
 }
 .App .btn-lnk {
-  color: #696980;
+	color: #696980;
+}
+
+.App h2 {
+	font-family: "Special Elite", monospace;
+	font-size: 2em;
 }
 
 @media only screen and (min-width: 701px) {

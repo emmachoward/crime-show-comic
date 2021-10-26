@@ -6,6 +6,7 @@ import classes from './App.module.css'
 import Nav from './components/nav/Nav';
 import Comic from './components/comics/Comic';
 import About from './components/about/About';
+import Contact from './components/contact/Contact'
 import { SidebarContext } from './context/Sidebar-context'
 import { Route, Switch, Redirect } from "react-router-dom";
 
@@ -42,6 +43,9 @@ function App() {
           </Route>
           <Route path="/about">
             <About />
+          </Route>
+          <Route path="/contact">
+            <Contact />
           </Route>
         </Switch>
       </div>

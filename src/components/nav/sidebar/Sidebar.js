@@ -19,6 +19,7 @@ const Sidebar = (props) => {
                     <NavLink to='/comics'>
                         Comics
                     </NavLink>
+                    </li>
                     <ol>
                         {comicData.map(comic =>
                             <li key={comic.id}>
@@ -29,6 +30,11 @@ const Sidebar = (props) => {
                             
                         )}
                     </ol>
+                
+                <li>
+                    <NavLink to='/contact'>
+                        Contact
+                    </NavLink>
                 </li>
             </ul>
             <br /><br /><br /><br />
