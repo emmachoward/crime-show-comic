@@ -1,12 +1,13 @@
 .mobileNav {
-  background: #ffd91d;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+	background: #ffd91d;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
 }
 .mobileNav .btn-lnk {
-  color: #696980;
+	color: #696980;
 }
 .mobileNav li {
-  width: 22%;
+	width: 22%;
 }
