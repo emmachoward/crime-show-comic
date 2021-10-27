@@ -18,16 +18,6 @@ const Search = (props) => {
         };
     }, [enteredSearch, comicData]);
 
-
-    // const filterComics = (comics, query) => {
-    //     //console.log(comics);
-    //     if (query.trim() === '') {
-    //         return [];
-    //     }
-    //     return comics.filter(
-    //         comic => comic.title.toLowerCase().indexOf(query.toLowerCase().trim()) !== -1);
-    // }
-
     const searchChangeHandler = (event) => {
         setEnteredSearch(event.target.value)
         if (enteredSearch.trim() === '') {
@@ -35,41 +25,38 @@ const Search = (props) => {
         } else {
             setComicsList(comicData);
         }
-        //console.log(enteredSearch);
-        //setComicsList(filterComics(comicData, enteredSearch));
     };
 
     const submitHandler = (event) => {
         event.preventDefault();
-        //console.log(enteredSearch);
-        //setComicsList(filterComics(comicData, enteredSearch));
     };
 
     return (
-        <div className={classes.search}>
-            <form onSubmit={submitHandler}>
-                <label htmlFor="search">Search:</label>
-                <input 
-                    type="text" 
-                    placeholder="Comic Title" 
-                    id="search" 
-                    name="search"
-                    value={enteredSearch}
-                    onChange={searchChangeHandler}
-                />
-                {/* <input type="submit" value="Search" onChange={searchChangeHandler} /> */}
-            </form>
-            <ul>
-                {comicsList.map(comic =>
-                    <li key={comic.id}>
-                        <HashLink to={`/comics#${comic.link}`}>
-                            {comic.title}
-                        </HashLink>
-                    </li>
-                )}
-            </ul>
-            <br /><br /><br /><br />
-        </div>
+        <>
+            <div className={classes.search}>
+                <form onSubmit={submitHandler}>
+                    <label htmlFor="search">Search:</label>
+                    <input 
+                        type="text" 
+                        placeholder="Comic Title" 
+                        id="search" 
+                        name="search"
+                        value={enteredSearch}
+                        onChange={searchChangeHandler}
+                    />
+                </form>
+                <ul>
+                    {comicsList.map(comic =>
+                        <li key={comic.id}>
+                            <HashLink to={`/comics#${comic.link}`}>
+                                {comic.title}
+                            </HashLink>
+                        </li>
+                    )}
+                </ul>
+                <br /><br /><br /><br />
+            </div>
+        </>
     );
 };
 

@@ -43,7 +43,7 @@ const Contact = () => {
             <h2>Contact</h2>
             <form> 
                 <label htmlFor="email">Email {isInvalid && <sup className="text-danger">*</sup>}</label>
-                <input type="email" id="email" label="Email" onChange={handleEmailChange} />
+                <input type="email" id="email" label="Email" onChange={handleEmailChange} required />
                 <br />
                 <textarea name="message" handleChange={handleMessageChange} rows="10" cols="30">
                     Type message here.

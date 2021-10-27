@@ -13,6 +13,7 @@
 	line-height: 120%;
 	padding: 0;
 	margin: 0 0 50px 0;
+	z-index: 15;
 }
 
 .sidebar ul {

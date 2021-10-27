@@ -27,7 +27,7 @@ const DesktopNav = props => {
                 `}
             </style>
             {ctx.displaySidebar && <Sidebar comicData={comicData} />}  
-            {displaySearch && <Search comicData={comicData} />}
+            {displaySearch && <><div className={classes.backdrop} onClick={displaySearchHandler} /> <Search comicData={comicData} /></>}
             
             <div className={classes.desktopNav}>
                 <div  className={classes.menu}>

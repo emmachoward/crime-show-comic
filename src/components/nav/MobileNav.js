@@ -41,8 +41,8 @@ const MobileNav = props => {
                 }
                 `}
             </style>
-            {displaySidebar && <Sidebar comicData={comicData} />}
-            {displaySearch && <Search comicData={comicData} />}
+            {displaySidebar &&  <><div className={classes.backdrop} onClick={displaySidebarHandler} /> <Sidebar comicData={comicData} /> </>}
+            {displaySearch && <><div className={classes.backdrop} onClick={displaySearchHandler} /> <Search comicData={comicData} /> </>}
             <div className={classes.mobileNav}>
                 <ul>
                     <li>
