@@ -6,7 +6,7 @@ const Comic = props => {
     const { comicData } = props;
     
     return (
-        <>
+        <div className={classes.container}>
             {comicData.map(comic =>
                 <div className={classes.comic} key={comic.id}  id={comic.link}>
                     <h2>{comic.title}</h2>
@@ -20,7 +20,7 @@ const Comic = props => {
                 </div>
             )}
             
-        </>
+        </div>
     );
 };
 

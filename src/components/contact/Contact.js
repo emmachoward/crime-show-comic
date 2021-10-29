@@ -27,7 +27,7 @@ const Contact = () => {
         e.preventDefault();
         handleEmailChange(e);
         if (isInvalid === false) {
-            alert(`Please note that this contact form is just for demostration purposes, and doesn't actually send any data. ${messageInput}`);
+            alert(`Please note that this contact form is just for demostration purposes, and doesn't actually send any data. \nYour Message: ${messageInput}`);
             setEmailInput('');
         } else {
             alert("Please enter a valid email.");
@@ -45,9 +45,8 @@ const Contact = () => {
                 <label htmlFor="email">Email {isInvalid && <sup className="text-danger">*</sup>}</label>
                 <input type="email" id="email" label="Email" onChange={handleEmailChange} required />
                 <br />
-                <textarea name="message" handleChange={handleMessageChange} rows="10" cols="30">
-                    Type message here.
-                </textarea> 
+                <textarea placeholder="Type your message" id="message" onChange={handleMessageChange} rows="10" cols="30" />
+                <br />
                 <button type="submit" onClick={handleSubmit}>Submit</button>
             </form>
         </div>

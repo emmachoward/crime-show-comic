@@ -10,8 +10,8 @@
 	text-align: left;
 	font-family: "Special Elite", monospace;
 	font-size: 1.5em;
-	padding: 0 10px;
-	z-index: 15;
+	padding: 0 10px 100px 10px;
+	z-index: 16;
 }
 
 .search ul {
