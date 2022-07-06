@@ -1,149 +1,163 @@
-[   
-    {
-        "id": 1000,
-        "title": "Test",
-        "image": "test.png",
-        "link": "test",
-        "date": "August 26, 2021"
-    },
-    {
-        "id": 1010,
-        "title": "Easy Case",
-        "image": "easy_case.png",
-        "link": "easy_case",
-        "date": "Not Released"
-    },
-    {
-        "id": 1020,
-        "title": "Wittism",
-        "image": "wittism.png",
-        "link": "wittism",
-        "date": "Not Released"
-    },
-    {
-        "id": 1030,
-        "title": "Suspect",
-        "image": "suspect.png",
-        "link": "suspect",
-        "date": "Not Released"
-    },
-    {
-        "id": 1040,
-        "title": "Informant",
-        "image": "informant.png",
-        "link": "informant",
-        "date": "Not Released"
-    },
-    {
-        "id": 1050,
-        "title": "Confession",
-        "image": "confession.png",
-        "link": "confession",
-        "date": "Not Released"
-    },
-    {
-        "id": 1060,
-        "title": "White Collar Crime",
-        "image": "white_collar_crime.png",
-        "link": "white_collar_crime",
-        "date": "Not Released"
-    },
-    {
-        "id": 1070,
-        "title": "Soundtrack",
-        "image": "soundtrack.png",
-        "link": "soundtrack",
-        "date": "Not Released"
-    },
-    {
-        "id": 1080,
-        "title": "Ratings",
-        "image": "ratings.png",
-        "link": "ratings",
-        "date": "Not Released"
-    },
-    {
-        "id": 1090,
-        "title": "Conroner",
-        "image": "coroner.png",
-        "link": "coroner",
-        "date": "Not Released"
-    },
-    {
-        "id": 1100,
-        "title": "Detail",
-        "image": "detail.png",
-        "link": "detail",
-        "date": "Not Released"
-    },
-    {
-        "id": 1110,
-        "title": "High Heels",
-        "image": "high_heels.png",
-        "link": "high_heels",
-        "date": "Not Released"
-    },
-    {
-        "id": 1120,
-        "title": "Low Heels",
-        "image": "low_heels.png",
-        "link": "low_heel",
-        "date": "Not Released"
-    },
-    {
-        "id": 1130,
-        "title": "Loose Ends",
-        "image": "loose_ends.png",
-        "link": "loose_ends",
-        "date": "Not Released"
-    },
-    {
-        "id": 1140,
-        "title": "Next Season",
-        "image": "next_season.png",
-        "link": "next_season",
-        "date": "Not Released"
-    },
-    {
-        "id": 1150,
-        "title": "Together",
-        "image": "together.png",
-        "link": "together",
-        "date": "Not Released"
-    },
-    {
-        "id": 1160,
-        "title": "Assault",
-        "image": "assault.png",
-        "link": "assault",
-        "date": "Not Released"
-    },
-    {
-        "id": 1170,
-        "title": "Freeze",
-        "image": "freeze.png",
-        "link": "freeze",
-        "date": "Not Released"
-    },
-    {
-        "id": 1180,
-        "title": "Language",
-        "image": "language.png",
-        "link": "language",
-        "date": "Not Released"
-    },
-    {
-        "id": 1190,
-        "title": "Fishy",
-        "image": "fishy.png",
-        "link": "fishy",
-        "date": "Not Released"
-    },
-    {
-        "id": 1200,
-        "title": "Mundane",
-        "image": "mundane.png",
-        "link": "mundane",
-        "date": "Not Released"
-    }
+[
+	{
+		"id": 1000,
+		"title": "Test",
+		"image": "test.png",
+		"link": "test",
+		"date": "August 26, 2021"
+	},
+	{
+		"id": 1001,
+		"title": "Test 2",
+		"image": "test2.png",
+		"link": "test2",
+		"date": "April 24, 2022"
+	},
+	{
+		"id": 1002,
+		"title": "Test 3",
+		"image": "test3.png",
+		"link": "test3",
+		"date": "May 1, 2022"
+	},
+	{
+		"id": 1010,
+		"title": "Easy Case",
+		"image": "easy_case.png",
+		"link": "easy_case",
+		"date": "Not Released"
+	},
+	{
+		"id": 1020,
+		"title": "Wittism",
+		"image": "wittism.png",
+		"link": "wittism",
+		"date": "Not Released"
+	},
+	{
+		"id": 1030,
+		"title": "Suspect",
+		"image": "suspect.png",
+		"link": "suspect",
+		"date": "Not Released"
+	},
+	{
+		"id": 1040,
+		"title": "Informant",
+		"image": "informant.png",
+		"link": "informant",
+		"date": "Not Released"
+	},
+	{
+		"id": 1050,
+		"title": "Confession",
+		"image": "confession.png",
+		"link": "confession",
+		"date": "Not Released"
+	},
+	{
+		"id": 1060,
+		"title": "White Collar Crime",
+		"image": "white_collar_crime.png",
+		"link": "white_collar_crime",
+		"date": "Not Released"
+	},
+	{
+		"id": 1070,
+		"title": "Soundtrack",
+		"image": "soundtrack.png",
+		"link": "soundtrack",
+		"date": "Not Released"
+	},
+	{
+		"id": 1080,
+		"title": "Ratings",
+		"image": "ratings.png",
+		"link": "ratings",
+		"date": "Not Released"
+	},
+	{
+		"id": 1090,
+		"title": "Conroner",
+		"image": "coroner.png",
+		"link": "coroner",
+		"date": "Not Released"
+	},
+	{
+		"id": 1100,
+		"title": "Detail",
+		"image": "detail.png",
+		"link": "detail",
+		"date": "Not Released"
+	},
+	{
+		"id": 1110,
+		"title": "High Heels",
+		"image": "high_heels.png",
+		"link": "high_heels",
+		"date": "Not Released"
+	},
+	{
+		"id": 1120,
+		"title": "Low Heels",
+		"image": "low_heels.png",
+		"link": "low_heel",
+		"date": "Not Released"
+	},
+	{
+		"id": 1130,
+		"title": "Loose Ends",
+		"image": "loose_ends.png",
+		"link": "loose_ends",
+		"date": "Not Released"
+	},
+	{
+		"id": 1140,
+		"title": "Next Season",
+		"image": "next_season.png",
+		"link": "next_season",
+		"date": "Not Released"
+	},
+	{
+		"id": 1150,
+		"title": "Together",
+		"image": "together.png",
+		"link": "together",
+		"date": "Not Released"
+	},
+	{
+		"id": 1160,
+		"title": "Assault",
+		"image": "assault.png",
+		"link": "assault",
+		"date": "Not Released"
+	},
+	{
+		"id": 1170,
+		"title": "Freeze",
+		"image": "freeze.png",
+		"link": "freeze",
+		"date": "Not Released"
+	},
+	{
+		"id": 1180,
+		"title": "Language",
+		"image": "language.png",
+		"link": "language",
+		"date": "Not Released"
+	},
+	{
+		"id": 1190,
+		"title": "Fishy",
+		"image": "fishy.png",
+		"link": "fishy",
+		"date": "Not Released"
+	},
+	{
+		"id": 1200,
+		"title": "Mundane",
+		"image": "mundane.png",
+		"link": "mundane",
+		"date": "Not Released"
+	}
 ]
