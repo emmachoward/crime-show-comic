@@ -17,7 +17,8 @@ function App() {
   const [staticComicData, setStaticComicData] = useState([]);
 
   useEffect(() => {
-    fetch("https://api.jsonbin.io/b/617849249548541c29c8ed3e")
+    // fetch("https://api.jsonbin.io/b/617849249548541c29c8ed3e")
+    fetch("data/comicData.json")
       .then(response => response.json())
       .then(data => { 
         setStaticComicData(data);
